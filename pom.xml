@@ -72,7 +72,7 @@
 				<configuration>
 					<url>http://localhost/manager/text</url>
 					<server>tomcat</server>
-					<path>/Property</path>
+					<path>/PropertyAS</path>
 					<update>true</update>
 				</configuration>
 			</plugin>
