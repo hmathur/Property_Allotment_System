@@ -5,14 +5,16 @@
 <struts>
 	<constant name="struts.devMode" value="true" />
 	<package name="default" namespace="/" extends="struts-default">
-
+<!-- 
 		<action name="userLoginAction" class="com.xavient.pas.action.UserLoginAction"
 			method="processLogin">
 			<result name="success">/welcome.jsp</result>
 			<result name="input">/Login.jsp</result>
 
+		</action> -->
+		<action name="cities" class="com.xavient.pas.action.CityAction" method="show">
+		<result name="success">/Buy.jsp</result>
 		</action>
-		
 	</package>
 
 

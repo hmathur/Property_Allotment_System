@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="bean.Builders" table="builders">
+    <class name="com.xavient.pas.dao.bean.BuildersBean" table="builders">
         <id name="bId" type="java.lang.Integer">
             <column name="BUILDER_ID" />
             <generator class="assigned" />

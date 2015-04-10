@@ -24,8 +24,7 @@ public class SchemesDAOImpl implements SchemesDAO {
 
 		try {
 			Criteria criteria = session.createCriteria(CityBean.class);
-			cities = criteria.list();
-
+			cities.addAll( criteria.list());
 		} catch (Exception e) {
 
 		} finally {
@@ -33,6 +32,7 @@ public class SchemesDAOImpl implements SchemesDAO {
 				session.close();
 			}
 		}
+		
 		return cities;
 
 	}
@@ -48,9 +48,7 @@ public class SchemesDAOImpl implements SchemesDAO {
 			Criteria criteria = session.createCriteria(LocationsBean.class)
 					.add(Restrictions.like("cityCode", cityID));
 			
-			//criteria = session.createCriteria(LocationsBean.class)
-					//.add(Restrictions.like("cityCode", cityBean));
-
+			
 			locations = criteria.list();
 		} catch (Exception e) {
 
