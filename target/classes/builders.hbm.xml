@@ -3,15 +3,15 @@
 "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <class name="com.xavient.pas.dao.bean.BuildersBean" table="builders">
-        <id name="bId" type="java.lang.Integer">
+        <id name="builderId" type="java.lang.Integer">
             <column name="BUILDER_ID" />
             <generator class="assigned" />
         </id>
-        <property name="bName" type="java.lang.String">
+        <property name="builderName" type="java.lang.String">
         	<column name="BUILDER_NAME" />
         </property>
         
-        <property name="lId" type="java.lang.Integer">
+        <property name="locationId" type="java.lang.Integer">
             <column name="LOCATION_ID" />
         </property> 
         

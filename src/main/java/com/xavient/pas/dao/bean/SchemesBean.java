@@ -1,42 +1,46 @@
 package com.xavient.pas.dao.bean;
 
 public class SchemesBean {
-	private int sId;
-	private String sName;
-	private int bId;
-	private int lId;
+	private int schemeId;
+	private String schemeName;
+	private int builderId;
+	private int locationId;
 	private int cityCode;
 
-	public int getsId() {
-		return sId;
+	
+
+	public int getSchemeId() {
+		return schemeId;
 	}
 
-	public void setsId(int sId) {
-		this.sId = sId;
+	public void setSchemeId(int schemeId) {
+		this.schemeId = schemeId;
 	}
 
-	public String getsName() {
-		return sName;
+	public String getSchemeName() {
+		return schemeName;
 	}
 
-	public void setsName(String sName) {
-		this.sName = sName;
+	public void setSchemeName(String schemeName) {
+		this.schemeName = schemeName;
 	}
 
-	public int getbId() {
-		return bId;
+	
+
+	public int getBuilderId() {
+		return builderId;
 	}
 
-	public void setbId(int bId) {
-		this.bId = bId;
+	public void setBuilderId(int builderId) {
+		this.builderId = builderId;
 	}
 
-	public int getlId() {
-		return lId;
+	public int getLocationId() {
+		return locationId;
 	}
 
-	public void setlId(int lId) {
-		this.lId = lId;
+	public void setLocationId(int locationId) {
+		this.locationId = locationId;
 	}
 
 	public int getCityCode() {

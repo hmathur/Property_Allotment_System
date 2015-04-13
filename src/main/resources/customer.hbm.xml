@@ -19,7 +19,7 @@
             <column name="EMAIL_ID" />
         </property>     
         
-         <property name="number" type="java.lang.Integer">
+         <property name="number" type="java.lang.String">
             <column name="PHONE" />
         </property>   
         

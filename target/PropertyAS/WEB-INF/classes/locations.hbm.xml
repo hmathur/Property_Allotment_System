@@ -3,11 +3,11 @@
 "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <class name="com.xavient.pas.dao.bean.LocationsBean" table="locations">
-        <id name="lId" type="java.lang.Integer">
+        <id name="locationId" type="java.lang.Integer">
             <column name="LOCATION_ID" />
             <generator class="assigned" />
         </id>
-        <property name="lName" type="java.lang.String">
+        <property name="locationName" type="java.lang.String">
         	<column name="LOCATION_NAME" />
         </property>
 

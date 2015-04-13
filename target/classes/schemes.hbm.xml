@@ -3,19 +3,19 @@
 "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <class name="com.xavient.pas.dao.bean.SchemesBean" table="schemes">
-        <id name="sId" type="java.lang.Integer">
+        <id name="schemeId" type="java.lang.Integer">
             <column name="SCHEME_ID" />
             <generator class="assigned" />
         </id>
-        <property name="sName" type="java.lang.String">
+        <property name="schemeName" type="java.lang.String">
         	<column name="SCHEME_NAME" />
         </property>
 
- <property name="bId" type="java.lang.Integer">
+ <property name="builderId" type="java.lang.Integer">
         	<column name="BUILDER_ID" />
         </property>
        
-         <property name="lId" type="java.lang.Integer">
+         <property name="locationId" type="java.lang.Integer">
         	<column name="LOCATION_ID" />
         </property>
 

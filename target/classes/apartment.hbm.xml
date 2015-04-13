@@ -3,23 +3,23 @@
 "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <class name="com.xavient.pas.dao.bean.Apartment" table="apartment">
-        <id name="aId" type="java.lang.Integer">
+        <id name="apartmentId" type="java.lang.Integer">
             <column name="APARTMENT_ID" />
             <generator class="assigned" />
         </id>
-        <property name="aName" type="java.lang.String">
+        <property name="apartmentName" type="java.lang.String">
         	<column name="APARTMENT_NAME" />
         </property>
         
-        <property name="sId" type="java.lang.Integer">
+        <property name="schemeId" type="java.lang.Integer">
             <column name="SCHEME_ID" />
         </property> 
         
-         <property name="bId" type="java.lang.Integer">
+         <property name="builderId" type="java.lang.Integer">
             <column name="BUILDER_ID" />
         </property>     
         
-         <property name="lId" type="java.lang.Integer">
+         <property name="locationId" type="java.lang.Integer">
             <column name="LOCATION_ID" />
         </property>   
         
@@ -31,19 +31,19 @@
         	<column name="AREA_CODE" />
         </property>
         
-        <property name="dFNA" type="java.lang.Integer">
+        <property name="distFromNearestAirport" type="java.lang.Integer">
             <column name="DIST_FROM_NEAREST_AIRPORT" />
         </property> 
         
-         <property name="dFRS" type="java.lang.Integer">
+         <property name="distFromNearestRailway" type="java.lang.Integer">
             <column name="DIST_FROM_NEAREST_RAILWAY" />
         </property>     
         
-         <property name="dFCOC" type="java.lang.Integer">
+         <property name="distFromCenterOfCity" type="java.lang.Integer">
             <column name="DIST_FROM_CENTER_OF_CITY" />
         </property>   
         
-        <property name="dFNH" type="java.lang.Integer">
+        <property name="distFromNearestHospital" type="java.lang.Integer">
             <column name="DIST_FROM_NEAREST_HOSPITAL" />
         </property>   
         

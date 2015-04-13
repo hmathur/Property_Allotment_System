@@ -15,6 +15,14 @@
 		<action name="cities" class="com.xavient.pas.action.CityAction" method="show">
 		<result name="success">/Buy.jsp</result>
 		</action>
+		
+		<action name="locations" class="com.xavient.pas.action.CityAction" method="getLocationLists">
+		<result name="success">/Buy.jsp</result>
+		</action>
+		
+		<action name="builders" class="com.xavient.pas.action.CityAction" method="getBuilderLists">
+		<result name="success">/Buy.jsp</result>
+		</action>
 	</package>
 
 

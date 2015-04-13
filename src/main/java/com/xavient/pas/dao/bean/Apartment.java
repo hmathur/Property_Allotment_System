@@ -1,51 +1,22 @@
 package com.xavient.pas.dao.bean;
 
 public class Apartment extends SchemesBean {
-private int aId;
-private String aName;
-private int sId;
-private int bId;
-private int lId;
+private int apartmentId;
+private String apartmentName;
+private int schemeId;
+private int builderId;
+private int locationId;
 private int cityCode;
 private int areaCode;
-private int dFNA;
-private int dFRS;
-private int dFCOC;
-private int dFNH;
+private int distFromNearestAirport;
+private int distFromNearestRailway;
+private int distFromCenterOfCity;
+private int distFromNearestHospital;
 private int cost;
 private boolean availabilty;
 private int floor;
 
-public int getaId() {
-	return aId;
-}
-public void setaId(int aId) {
-	this.aId = aId;
-}
-public String getaName() {
-	return aName;
-}
-public void setaName(String aName) {
-	this.aName = aName;
-}
-public int getsId() {
-	return sId;
-}
-public void setsId(int sId) {
-	this.sId = sId;
-}
-public int getbId() {
-	return bId;
-}
-public void setbId(int bId) {
-	this.bId = bId;
-}
-public int getlId() {
-	return lId;
-}
-public void setlId(int lId) {
-	this.lId = lId;
-}
+
 public int getCityCode() {
 	return cityCode;
 }
@@ -58,31 +29,62 @@ public int getAreaCode() {
 public void setAreaCode(int areaCode) {
 	this.areaCode = areaCode;
 }
-public int getdFNA() {
-	return dFNA;
-}
-public void setdFNA(int dFNA) {
-	this.dFNA = dFNA;
-}
-public int getdFRS() {
-	return dFRS;
-}
-public void setdFRS(int dFRS) {
-	this.dFRS = dFRS;
-}
-public int getdFCOC() {
-	return dFCOC;
-}
-public void setdFCOC(int dFCOC) {
-	this.dFCOC = dFCOC;
-}
-public int getdFNH() {
-	return dFNH;
-}
-public void setdFNH(int dFNH) {
-	this.dFNH = dFNH;
-}
 
+
+public int getApartmentId() {
+	return apartmentId;
+}
+public void setApartmentId(int apartmentId) {
+	this.apartmentId = apartmentId;
+}
+public String getApartmentName() {
+	return apartmentName;
+}
+public void setApartmentName(String apartmentName) {
+	this.apartmentName = apartmentName;
+}
+public int getSchemeId() {
+	return schemeId;
+}
+public void setSchemeId(int schemeId) {
+	this.schemeId = schemeId;
+}
+public int getBuilderId() {
+	return builderId;
+}
+public void setBuilderId(int builderId) {
+	this.builderId = builderId;
+}
+public int getLocationId() {
+	return locationId;
+}
+public void setLocationId(int locationId) {
+	this.locationId = locationId;
+}
+public int getDistFromNearestAirport() {
+	return distFromNearestAirport;
+}
+public void setDistFromNearestAirport(int distFromNearestAirport) {
+	this.distFromNearestAirport = distFromNearestAirport;
+}
+public int getDistFromNearestRailway() {
+	return distFromNearestRailway;
+}
+public void setDistFromNearestRailway(int distFromNearestRailway) {
+	this.distFromNearestRailway = distFromNearestRailway;
+}
+public int getDistFromCenterOfCity() {
+	return distFromCenterOfCity;
+}
+public void setDistFromCenterOfCity(int distFromCenterOfCity) {
+	this.distFromCenterOfCity = distFromCenterOfCity;
+}
+public int getDistFromNearestHospital() {
+	return distFromNearestHospital;
+}
+public void setDistFromNearestHospital(int distFromNearestHospital) {
+	this.distFromNearestHospital = distFromNearestHospital;
+}
 public int getCost() {
 	return cost;
 }

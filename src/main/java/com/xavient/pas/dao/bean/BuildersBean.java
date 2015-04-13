@@ -1,28 +1,31 @@
 package com.xavient.pas.dao.bean;
 
 public class BuildersBean {
-private int bId;
-private String bName;
-private int lId;
+private int builderId;
+private String builderName;
+private int locationId;
 private int cityCode;
 
-public int getbId() {
-	return bId;
+
+public int getBuilderId() {
+	return builderId;
 }
-public void setbId(int bId) {
-	this.bId = bId;
+public void setBuilderId(int builderId) {
+	this.builderId = builderId;
 }
-public String getbName() {
-	return bName;
+
+
+public String getBuilderName() {
+	return builderName;
 }
-public void setbName(String bName) {
-	this.bName = bName;
+public void setBuilderName(String builderName) {
+	this.builderName = builderName;
 }
-public int getlId() {
-	return lId;
+public int getLocationId() {
+	return locationId;
 }
-public void setlId(int lId) {
-	this.lId = lId;
+public void setLocationId(int locationId) {
+	this.locationId = locationId;
 }
 public int getCityCode() {
 	return cityCode;

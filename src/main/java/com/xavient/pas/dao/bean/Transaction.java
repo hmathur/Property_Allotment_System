@@ -3,8 +3,8 @@ package com.xavient.pas.dao.bean;
 public class Transaction {
 private int transactionId;
 private int customerId;
-private int aId;
-private int amount;
+private int apartmentId;
+private int allotmentId;
 
 public int getTransactionId() {
 	return transactionId;
@@ -18,18 +18,20 @@ public int getCustomerId() {
 public void setCustomerId(int customerId) {
 	this.customerId = customerId;
 }
-public int getaId() {
-	return aId;
+public int getApartmentId() {
+	return apartmentId;
 }
-public void setaId(int aId) {
-	this.aId = aId;
+public void setApartmentId(int apartmentId) {
+	this.apartmentId = apartmentId;
+}
+public int getAllotmentId() {
+	return allotmentId;
+}
+public void setAllotmentId(int allotmentId) {
+	this.allotmentId = allotmentId;
 }
 
-public int getAmount() {
-	return amount;
-}
-public void setAmount(int amount) {
-	this.amount = amount;
-}
+
+
 
 }

@@ -11,12 +11,12 @@
         	<column name="CUSTOMER_ID" />
         </property>
         
-        <property name="aId" type="java.lang.Integer">
+        <property name="apartmentId" type="java.lang.Integer">
             <column name="APARTMENT_ID" />
         </property> 
         
-         <property name="amount" type="java.lang.Integer">
-            <column name="AMOUNT" />
+         <property name="allotmentId" type="java.lang.Integer">
+            <column name="ALLOTMENT_ID" />
         </property>     
      
     </class>

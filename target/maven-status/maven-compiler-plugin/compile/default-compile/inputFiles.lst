@@ -3,16 +3,15 @@ C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\action\
 C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\dao\impl\SchemesDAOImpl.java
 C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\dao\bean\SchemesBean.java
 C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\dao\bean\LocationsBean.java
-C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\dao\bean\Allotment.java
 C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\utils\HibernateUtils.java
 C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\bo\SchemesBO.java
 C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\dao\bean\Areas.java
 C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\dao\bean\Apartment.java
 C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\dao\bean\CityBean.java
+C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\action\LocationAction.java
 C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\dao\bean\Customer.java
 C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\dao\bean\Admin.java
 C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\dao\bean\BuildersBean.java
 C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\bo\impl\SchemesBOImpl.java
-C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\dao\bean\Account.java
 C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\dao\bean\Transaction.java
 C:\Users\hmathur\Property_Allotment_System\src\main\java\com\xavient\pas\action\CityAction.java

@@ -11,9 +11,9 @@ public interface SchemesDAO {
 
 	public List<CityBean> getCityList();
 	
-	public List<LocationsBean> getLocationList(String cityID);
+	public List<LocationsBean> getLocationList(int cityID);
 	
-	public List<BuildersBean> getBuilderList(String locationID);
+	public List<BuildersBean> getBuilderList(int locationID);
 	
-	public List<SchemesBean> getSchemesList(String BuilderID);
+	public List<SchemesBean> getSchemesList(int builderID);
 }

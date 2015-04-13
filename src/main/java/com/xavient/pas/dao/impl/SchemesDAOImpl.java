@@ -19,12 +19,13 @@ public class SchemesDAOImpl implements SchemesDAO {
 	@Override
 	public List<CityBean> getCityList() {
 
-		List<CityBean> cities = new ArrayList<CityBean>();
+		List<CityBean> cities = null ;
 		Session session = HibernateUtils.getInstance().openSession();
 
 		try {
 			Criteria criteria = session.createCriteria(CityBean.class);
-			cities.addAll( criteria.list());
+			cities = criteria.list();
+			
 		} catch (Exception e) {
 
 		} finally {
@@ -38,18 +39,18 @@ public class SchemesDAOImpl implements SchemesDAO {
 	}
 
 	@Override
-	public List<LocationsBean> getLocationList(String cityID) {
-		List<LocationsBean> locations = new ArrayList<LocationsBean>();
+	public List<LocationsBean> getLocationList(int cityID) {
+		List<LocationsBean> locations = null ;
 		Session session = HibernateUtils.getInstance().openSession();
 
 		CityBean cityBean = new CityBean();
-		cityBean.setCityCode(Integer.parseInt(cityID));
+		cityBean.setCityCode(cityID);
 		try {
 			Criteria criteria = session.createCriteria(LocationsBean.class)
 					.add(Restrictions.like("cityCode", cityID));
 			
-			
 			locations = criteria.list();
+			
 		} catch (Exception e) {
 
 		} finally {
@@ -61,15 +62,50 @@ public class SchemesDAOImpl implements SchemesDAO {
 	}
 
 	@Override
-	public List<BuildersBean> getBuilderList(String locationID) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	public List<BuildersBean> getBuilderList(int locationID) {
+		List<BuildersBean> builders=null;
+		Session session=HibernateUtils.getInstance().openSession();
+		BuildersBean buildersBean=new BuildersBean();
+		buildersBean.setLocationId(locationID);
+		try {
+			Criteria criteria =session.createCriteria(BuildersBean.class)
+					.add(Restrictions.like("locationId", locationID));
+			builders=criteria.list();
+		} catch(Exception e) {}
+		finally {
+			if(session != null) 
+			{
+				session.close();
+				
+			}
+		}
+		return builders;
+	
+	
+		
+		}
+		
+		
 
 	@Override
-	public List<SchemesBean> getSchemesList(String BuilderID) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<SchemesBean> getSchemesList(int builderID) {
+		List<SchemesBean> schemes=null;
+		Session session=HibernateUtils.getInstance().openSession();
+		SchemesBean schemesBean=new SchemesBean();
+		schemesBean.setBuilderId(builderID);
+		try {
+			Criteria criteria =session.createCriteria(SchemesBean.class)
+					.add(Restrictions.like("builderId", builderID));
+			schemes=criteria.list();
+		} catch(Exception e) {}
+		finally {
+			if(session != null) 
+			{
+				session.close();
+				
+			}
+		}
+		return schemes;
 	}
 
 }

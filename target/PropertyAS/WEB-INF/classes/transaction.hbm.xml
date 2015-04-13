@@ -15,8 +15,8 @@
             <column name="APARTMENT_ID" />
         </property> 
         
-         <property name="amount" type="java.lang.Integer">
-            <column name="AMOUNT" />
+         <property name="allotment_id" type="java.lang.Integer">
+            <column name="ALLOTMENT_ID" />
         </property>     
      
     </class>

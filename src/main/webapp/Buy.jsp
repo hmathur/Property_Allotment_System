@@ -1,53 +1,78 @@
 
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ taglib uri="/struts-tags" prefix="s"%>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">		
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Selection</title>
 <script>
-$(document).ready(function(){
-    $("#next1").click(function(){
-        $("t2").show();
-    });
-    $("#next2").click(function(){
-        $("t3").show();
-    });
-});
+	$(document).ready(function() {
+		$("#next1").click(function() {
+			$("t2").show();
+		});
+		$("#next2").click(function() {
+			$("t3").show();
+		});
+	});
+	function locationSelection() {
+		
+		document.buyForm.action = 'locations';
+		document.buyForm.submit();
+		
+	}
+	function builderSelection() {
+		document.buyForm.action= 'builders';
+		document.buyForm.submit();
+		
+	}
+	function schemeSelection() {
+		document.buyForm.action= 'schemes';
+		document.buyForm.submit();
+	}
 </script>
 
 </head>
 <body>
-<form action="next">
-<h2>Select</h2>
-<fieldset>
+	<form name="buyForm" action="locationselection.jsp">
+		<h2>Select</h2>
+		<fieldset>
 
-<s:combobox label="Select city" list="cityList" headerKey="-1" headerValue="--- Select ---" name="city" listValue="cityName" />
-<s:submit value="submit" name="submit"/>
- 
 
-</fieldset>
+			Select City:
+			<s:select list="cityList" headerKey="-1" headerValue="--- Select ---"
+				id="cityID" name="cityID" listValue="cityName" listKey="cityCode"
+				onchange="locationSelection();" />
 
-<fieldset style="visibility: hidden">
-<table id="t2" class="hide">
-<s:iterator value="locationList">
-<tr>
-<s:radio list="selectedlocation"></s:radio>
-<td><s:property value="lId"/></td>
-<td><s:property value="lName"/></td>
-<td><s:property value="cityCode"/></td>
 
-</tr>
-</s:iterator>
-<tr><td><s:submit value="submit" name="submit" id="next2"/>
-</td>
-</tr>
-</table>
+			<br>
+	<br>
 
-</fieldset>
-</form>
+			Select Location:
+			<s:select list="locationsList" headerKey="-1" headerValue="--- Select ---"
+				id="locationID" name="locationID" listValue="locationName" listKey="locationId"
+				onchange="builderSelection();" />
+				<br><br>
+			Select Builder:
+			<s:select list="builderList" headerKey="-1" headerValue="--- Select ---" 
+				id="builderID" name="builderID" listValue="builderName" listKey="builderId" 
+				onchange="schemeSelection();"/>
+			<br><br>
+			Select Scheme:
+			<s:select list="schemeList" headerKey="-1" headerValue="--- Select ---"
+				id="schemeID" name="schemeID" listValue="schemeName" listKey="schemeId" />
+				
+			
+			
+			<s:submit name="Submit" value="Submit"></s:submit>
+			
+			
+			
+		</fieldset>
+
+
+	</form>
 </body>
 </html>

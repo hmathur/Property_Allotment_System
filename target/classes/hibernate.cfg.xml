@@ -26,8 +26,7 @@
  
         <!-- mapping file, we can use Bean annotations too -->
         
-        <mapping resource="account.hbm.xml" />
-        <mapping resource="allotment.hbm.xml"/>
+       
         <mapping resource="apartment.hbm.xml"/>
         <mapping resource="areas.hbm.xml" />
         <mapping resource="builders.hbm.xml"/>

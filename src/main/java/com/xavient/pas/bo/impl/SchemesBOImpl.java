@@ -26,20 +26,21 @@ public class SchemesBOImpl implements SchemesBO {
 	}
 
 	@Override
-	public List<LocationsBean> getLocationList(String cityID) {
+	public List<LocationsBean> getLocationList(int cityID) {
 		return schemesDAO.getLocationList(cityID);
 	}
 
 	@Override
-	public List<BuildersBean> getBuilderList(String locationID) {
+	public List<BuildersBean> getBuilderList(int locationID) {
 		// TODO Auto-generated method stub
-		return null;
+		return schemesDAO.getBuilderList(locationID);
+		
 	}
 
 	@Override
-	public List<SchemesBean> getSchemesList(String BuilderID) {
+	public List<SchemesBean> getSchemesList(int builderID) {
 		// TODO Auto-generated method stub
-		return null;
+		return schemesDAO.getSchemesList(builderID);
 	}
 
 }
