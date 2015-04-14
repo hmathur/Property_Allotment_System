@@ -1,6 +1,7 @@
 package com.xavient.pas.dao.impl;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.hibernate.Criteria;
@@ -71,6 +72,9 @@ public class SchemesDAOImpl implements SchemesDAO {
 			Criteria criteria =session.createCriteria(BuildersBean.class)
 					.add(Restrictions.like("locationId", locationID));
 			builders=criteria.list();
+			
+				
+			
 		} catch(Exception e) {}
 		finally {
 			if(session != null) 

@@ -64,6 +64,7 @@ public class CityAction extends ActionSupport {
 	}
 
 	public String show() {
+	
 		SchemesBO schemesBO = new SchemesBOImpl();
 		List<CityBean> cityListBO = schemesBO.getCityList();
 		setCityList(cityListBO);
@@ -72,6 +73,8 @@ public class CityAction extends ActionSupport {
 	}
 
 	public String getLocationLists() {
+		show();
+		
 		SchemesBO schemesBO = new SchemesBOImpl();
 		List<LocationsBean> locationListBO = schemesBO.getLocationList(cityID);
 		setLocationsList(locationListBO);
@@ -80,6 +83,7 @@ public class CityAction extends ActionSupport {
 	}
 
 	public String getBuilderLists() {
+		getLocationLists();
 		SchemesBO schemesBO = new SchemesBOImpl();
 		List<BuildersBean> builderListBO = schemesBO.getBuilderList(locationID);
 		setBuilderList(builderListBO);
@@ -88,6 +92,8 @@ public class CityAction extends ActionSupport {
 	}
 	
 	public String getSchemesLists() {
+		getBuilderLists();
+		
 		SchemesBO schemesBO = new SchemesBOImpl();
 		List<SchemesBean> schemeListBO= schemesBO.getSchemesList(builderID);
 		setSchemeList(schemeListBO);

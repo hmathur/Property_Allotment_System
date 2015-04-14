@@ -23,6 +23,13 @@
 		<action name="builders" class="com.xavient.pas.action.CityAction" method="getBuilderLists">
 		<result name="success">/Buy.jsp</result>
 		</action>
+		
+		<action name="schemes" class="com.xavient.pas.action.CityAction" method="getSchemesLists">
+		<result name="success">/Buy.jsp</result>
+		</action>
+		<action name="apartmentselection" class="com.xavient.pas.action.CityAction">
+		<result name="success">/apartmentselection.jsp</result>
+		</action>
 	</package>
 
 
