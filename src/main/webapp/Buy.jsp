@@ -1,5 +1,6 @@
 
 
+<%@page import="javax.swing.text.Document"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -33,6 +34,9 @@
 		document.buyForm.submit();
 	}
 	function final() {
+		
+		if(document.getElementById('schemeID').valueOf('headerValue')!="--- Select ---")
+			
 		document.getElementById('b1').disabled=false;
 		
 	}
@@ -52,19 +56,19 @@
 				onchange="locationSelection();" />
 
 
-			<br> <br> Select Location:
+			<br> <br> Select Location:<br>
 			<s:select list="locationsList" headerKey="-1"
 				headerValue="--- Select ---" id="locationID" name="locationID"
 				listValue="locationName" listKey="locationId"
 				onchange="builderSelection();" />
 			<br>
-			<br> Select Builder:
+			<br> Select Builder:<br>
 			<s:select list="builderList" headerKey="-1"
 				headerValue="--- Select ---" id="builderID" name="builderID"
 				listValue="builderName" listKey="builderId"
 				onchange="schemeSelection();" />
 			<br>
-			<br> Select Scheme:
+			<br> Select Scheme:<br>
 			<s:select list="schemeList" headerKey="-1"
 				headerValue="--- Select ---" id="schemeID" name="schemeID"
 				listValue="schemeName" listKey="schemeId" onchange="final();"/>
