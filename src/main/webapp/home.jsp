@@ -39,7 +39,7 @@ h3 {
 </head>
 <body>
 	<form action="home">
-		<h3 align="center">Property Allotment System</h3>abc123
+		<h3 align="center">Property Allotment System</h3>abc12333333
 		Test Message
 		<div class="nav" align="center">
 			<ul>
