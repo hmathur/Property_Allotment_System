@@ -18,7 +18,7 @@
 <body>
 
 <s:form action="home">
-<h2 align="center"  style="background-color: yellow">WELCOME TO PROPERTY ALLOTMENT SYSTEM</h2>
+<h2 align="center"  style="background-color: yellow">WELCOME TO PROPERTY ALLOTMENT SYSTEMhhhhhhh</h2>
 </s:form>
 </body>
 </html>
