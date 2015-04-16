@@ -74,6 +74,7 @@
 				listValue="schemeName" listKey="schemeId" onchange="final();"/>
 
 				Test Message
+				<h1>12345</h1>
 
 			<s:submit name="Submit" value="Submit" id="b1" disabled="true" ></s:submit>
 
