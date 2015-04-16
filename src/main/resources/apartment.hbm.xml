@@ -11,6 +11,10 @@
         	<column name="APARTMENT_NAME" />
         </property>
         
+       <!--   <property name="apartmentName" type="java.lang.String">
+        	<column name="APARTMENT_NAME" />
+        </property> -->
+        
         <property name="schemeId" type="java.lang.Integer">
             <column name="SCHEME_ID" />
         </property> 
