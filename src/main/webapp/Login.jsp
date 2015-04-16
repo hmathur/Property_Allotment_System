@@ -27,7 +27,7 @@ $(document).ready(function(){
 </head>
 <body>
 
-<h3>Welcome User, please login below</h3>
+<h3>Welcome User, please login below nnnnnnn</h3>
 <s:form action="userLoginAction">
 	<s:textfield name="name" label="Username" id="nameId"></s:textfield>
 	<s:textfield name="pwd" label="Password" type="password"></s:textfield>
