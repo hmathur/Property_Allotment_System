@@ -56,7 +56,7 @@
 				onchange="locationSelection();" />
 
 
-			<br> <br> Select Location:<br>123
+			<br> <br> Select Location:<br>1231
 			<s:select list="locationsList" headerKey="-1"
 				headerValue="--- Select ---" id="locationID" name="locationID"
 				listValue="locationName" listKey="locationId"
