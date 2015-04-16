@@ -40,6 +40,7 @@ h3 {
 <body>
 	<form action="home">
 		<h3 align="center">Property Allotment System</h3>
+		Test Message
 		<div class="nav" align="center">
 			<ul>
 				<li class="dropdown"><a href="#" data-toggle="dropdown">View</a>

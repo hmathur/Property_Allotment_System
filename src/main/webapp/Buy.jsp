@@ -73,7 +73,7 @@
 				headerValue="--- Select ---" id="schemeID" name="schemeID"
 				listValue="schemeName" listKey="schemeId" onchange="final();"/>
 
-
+				Test Message
 
 			<s:submit name="Submit" value="Submit" id="b1" disabled="true" ></s:submit>
 
